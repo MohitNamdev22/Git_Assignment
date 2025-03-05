@@ -94,10 +94,9 @@ let currentPlayer = 0;
             updateScores();
         }
 
-        // Initialize player names
         document.querySelectorAll('.name').forEach(input => {
-    input.placeholder = 'Enter player name';
-    input.addEventListener('input', updateScores);
+        input.placeholder = 'Enter player name';
+        input.addEventListener('input', updateScores);
 });
 
         resetGame();
