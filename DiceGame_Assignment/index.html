@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="players">
+        <div class="player" id="player1">
+            <input type="text" value="Player 1" class="name">
+            <div class="score saved">0</div>
+            <div class="current-score">Current: <span>0</span></div>
+        </div>
+        <div class="player" id="player2">
+            <input type="text" value="Player 2" class="name">
+            <div class="score saved">0</div>
+            <div class="current-score">Current: <span>0</span></div>
+        </div>
+    </div>
+
+    <div class="dice-container">
+        <div class="dice" id="dice">
+            <div class="dice-face front">1</div>
+            <div class="dice-face back">6</div>
+            <div class="dice-face right">4</div>
+            <div class="dice-face left">3</div>
+            <div class="dice-face top">2</div>
+            <div class="dice-face bottom">5</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="rollDice()">🎲 Roll Dice</button>
+        <button onclick="saveScore()">💾 Save Score</button>
+        <button onclick="resetGame()">🔄 Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
