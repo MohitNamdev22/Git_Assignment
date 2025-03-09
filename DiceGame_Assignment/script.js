@@ -52,7 +52,11 @@ let currentPlayer = 0;
             
             if (scores[currentPlayer] >= 100) {
                 gameActive = false;
-                alert(`${document.querySelectorAll('.name')[currentPlayer].value} wins!`);
+                const winner = document.querySelectorAll('.name')[currentPlayer].value;
+                alert(`${winner} wins!`);
+                setTimeout(() => {
+                    resetGame();
+                }, 1000);
             } else {
                 switchPlayer();
             }
