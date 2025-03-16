@@ -1,0 +1,42 @@
+Q) Explain the concept of encapsulation with a suitable example.
+
+=> Encapsulation is the process of wrapping data attributes and methods into a single enpsulated using which is a class and restricting direct access to the data by making the attributes private. To access the data, public methods such as getter and setter are used.
+
+Importance of Encapsulation - 
+1. Data Hiding - It prevents the direct access to data
+2. Control - It allows validation and logic to be added to data modification.
+3. Flexibility - In this internal implementation can be changed without affecting other part of program.
+
+Example - 
+
+class Student {
+    private String name;
+    private int rollNumber;
+    private double marks;
+
+    public Student(String name, int rollNumber, double marks) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.marks = marks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setMarks(double marks) {
+        if(marks >= 0 && marks <= 100) {
+            this.marks = marks;
+        } else {
+            System.out.println("Invalid marks");
+        }
+    }
+}
