@@ -1,0 +1,57 @@
+1) Difference Between Primitive and Reference Data Types
+
+
+Primitive Data Types:
+> Primitive data types are the most basic data types in Java.
+
+> They store actual values directly in memory.
+
+> They are predefined by the language and have fixed sizes.
+
+> Examples: int, char, boolean, float, double, byte, short, long.
+
+Reference Data Types:
+> Reference data types store references (memory addresses) to objects rather than the actual data.
+
+> They are created using defined constructors of classes.
+
+? Examples: String, Arrays, Classes, Interfaces.
+
+Key Differences:
+1. Storage
+Primitive Types: Store the actual value directly in memory. For example, an int variable stores the integer value itself.
+
+Reference Types: Store a reference (memory address) to the object. For example, a String variable stores the address of the String object in memory.
+
+2. Memory Allocation
+Primitive Types: Allocated in stack memory, which is faster and more efficient for small, fixed-size data.
+
+Reference Types: Allocated in heap memory, which is used for dynamic memory allocation and can handle larger and more complex data structures.
+
+3. Default Values
+Primitive Types: Have default values if not initialized. For example:
+
+int defaults to 0.
+
+boolean defaults to false.
+
+Reference Types: Default to null if not initialized, meaning they do not point to any object.
+
+4. Size
+Primitive Types: Have fixed sizes. For example:
+
+int is always 4 bytes.
+
+double is always 8 bytes.
+
+Reference Types: Have variable sizes depending on the object they refer to. For example:
+
+A String object’s size depends on the length of the string.
+
+An array’s size depends on the number of elements.
+
+5. Examples
+Primitive Types: int, char, boolean, float, double, byte, short, long.
+
+Reference Types: String, Arrays, Classes, Interfaces.
+
