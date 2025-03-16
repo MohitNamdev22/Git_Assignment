@@ -1,0 +1,64 @@
+Q) Explain the concept of interfaces and abstract classes with examples.
+
+=> 
+#Interfaces: An Interface is a refrence type similar to a class, it contain only constants, method signatures, default methods, nested types and static methods. It cant contain instance variable or constructors.
+
+> An interface is a blueprint of a class that defines a set of methods that a class must implement.
+
+> It supports multiple inheritance, meaning a class can implement multiple interfaces.
+
+> All methods in an interface are public and abstract by default.
+
+> Interfaces can also have default and static methods with implementation.
+
+example - 
+public interface Drawable {
+    void draw();
+}
+
+public class Circle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.draw(); 
+    }
+}
+
+This example demonstrates an interface Drawable with an abstract draw() method, which is implemented by the Circle class. The Main class creates a Circle object and calls its draw() method, showing "Drawing a Circle."
+
+------------------------------------------------------------------
+
+#Abstract Classes: It is a class that cannot be initialised directly. These are mostly used when a base class provides common functionality to subclasses but also leaves some behaviour to implemented by subclasses.
+
+> An abstract class is a class that cannot be instantiated and may contain both abstract methods and concrete methods.
+
+> It supports single inheritance ie a class can extend only one abstract class.
+
+> Abstract classes can have constructors, instance variables, and methods with access modifiers.
+
+example - 
+public abstract class Shape {
+    public abstract void draw();
+}
+
+public class Circle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.draw(); 
+    }
+}
+
+This shows how an abstract class can define common behavior in the form of an abstract method that must be implemented by subclasses. The Circle class provides the specific implementation of the draw() method.
